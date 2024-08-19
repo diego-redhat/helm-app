@@ -1,20 +1,19 @@
 apiVersion: v1
 entries:
-  frankenstein:
+  demo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-19T12:36:13.888176089-04:00"
+    created: "2024-08-19T12:49:19.834169303-04:00"
     description: A Helm chart for Kubernetes
-    digest: deda85a75757a8f721c3c03a11b112891c2fa73a9c91e9a1fe6670cf7bc2dba6
+    digest: 8bc0fbc010f8bd9077f19f3a170484be2078dc54e00e80fc01824fd7ea74be65
     icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
     keywords:
     - stonks
-    - banking
-    name: frankenstein
+    name: demo
     sources:
-    - https://github.com/doliveiraorg/helm_frankenstein
+    - https://github.com/doliveiraorg/helm_demo
     type: application
     urls:
-    - frankenstein-0.1.0.tgz
+    - demo-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-19T12:36:13.887618489-04:00"
+generated: "2024-08-19T12:49:19.833316274-04:00"
