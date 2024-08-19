@@ -7,6 +7,5 @@ appVersion: "1.16.0"
 icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
 keywords:
   - stonks
-  - banking
 sources:
   - https://github.com/doliveiraorg/helm_demo
