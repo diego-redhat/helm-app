@@ -1,6 +1,5 @@
 createDeployment: true
-createDeploymentPreview: false
-createHpa: true
+createRoute: true
 extraLabels:
 command:
 args:
