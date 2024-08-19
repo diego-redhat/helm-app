@@ -1,0 +1,24 @@
+{{- if .Values.createDeployment }}
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    {{- include "demo.helmlabels" . | nindent 4 }}
+    {{- if .Values.extraLabels }}
+    {{- toYaml .Values.extraLabels | nindent 4 }}
+    {{- end }}
+  namespace: {{ .Release.Namespace }}
+  name: {{ .Release.Name  }}
+spec:
+  ports:
+  - name: http
+    port: {{ .Values.containerPort | default 8080 }}
+    protocol: TCP
+    targetPort: {{ .Values.containerPort | default 8080 }}
+  selector:
+    {{- include "demo.helmlabels" . | nindent 4 }}
+    {{- if .Values.extraLabels }}
+    {{- toYaml .Values.extraLabels | nindent 4 }}
+    {{- end }}
+  type: {{ .Values.serviceType | default "ClusterIP" }}
+{{ end }}

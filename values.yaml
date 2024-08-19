@@ -1,0 +1,32 @@
+createDeployment: true
+createDeploymentPreview: false
+createHpa: true
+extraLabels:
+command:
+args:
+initContainers:
+containerPortName:
+containerPort:
+tag:
+customImage:
+resources:
+hpaMemoryLimit:
+hpaCPULimit:
+hpaMinReplicaCount:
+hpaMaxReplicaCount:
+externalSecret:
+extraSecrets:
+ingressHost:
+ingressClassName:
+ingressAnnotations:
+ingressPaths:
+# Insgress Paths
+#ingressPaths:
+#  paths:
+#    - path: /
+#      pathType: Prefix
+#      backend:
+#        service:
+#          name: batatinha
+#          port:
+#            number: 8080
