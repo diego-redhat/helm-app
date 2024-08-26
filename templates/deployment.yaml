@@ -10,7 +10,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
   name: {{ .Release.Name }}
 spec:
-  replicas: {{ .Values.hpaMinReplicaCount | default 1 }}
+  replicas: {{ .Values.replicas | default 1 }}
   selector:
     matchLabels:
     {{- include "demo.helmlabels" . | nindent 6 }}     

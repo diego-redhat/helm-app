@@ -3,9 +3,9 @@ entries:
   demo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-08-19T12:56:17.232549885-04:00"
+    created: "2024-08-26T14:30:44.672995286-04:00"
     description: A Helm chart for Kubernetes
-    digest: 1c12648da192d8aef3a688cbc4f1a5ff6d3d91a43953efad1b6a32cc3b81fb15
+    digest: f0ee330ce75845d92998a2d86872d86ce2ba0b6b69466403914ab97579fb0e7f
     icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
     keywords:
     - stonks
@@ -16,4 +16,4 @@ entries:
     urls:
     - demo-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-19T12:56:17.231553462-04:00"
+generated: "2024-08-26T14:30:44.67197282-04:00"

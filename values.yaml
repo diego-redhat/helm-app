@@ -11,6 +11,7 @@ customImage:
 resources:
 hpaMemoryLimit:
 hpaCPULimit:
+replicas: 
 hpaMinReplicaCount:
 hpaMaxReplicaCount:
 externalSecret:
@@ -19,13 +20,3 @@ ingressHost:
 ingressClassName:
 ingressAnnotations:
 ingressPaths:
-# Insgress Paths
-#ingressPaths:
-#  paths:
-#    - path: /
-#      pathType: Prefix
-#      backend:
-#        service:
-#          name: batatinha
-#          port:
-#            number: 8080
