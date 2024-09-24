@@ -30,7 +30,7 @@ spec:
         {{- if .Values.customImage }}
         image: {{ .Values.customImage }}
         {{- else if .Values.tag }}
-        image: quay.diolivei.vmware.tamlab.rdu2.redhat.com/devops/golang-demo:{{ .Values.tag }}
+        image: quay.diolivei.vmware.tamlab.rdu2.redhat.com/{{ .Values.org }}/{{ .Values.repo }}:{{ .Values.tag }}
         {{- else }}
         image: quay.io/fedora/httpd-24-micro
         {{- end }}
