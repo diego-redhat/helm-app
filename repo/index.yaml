@@ -3,9 +3,9 @@ entries:
   app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-08-08T13:48:12.005427-03:00"
+    created: "2025-08-08T13:50:12.967954-03:00"
     description: A Helm chart for Kubernetes
-    digest: efa96ca0882ee0988bf63691b1fae593beed183f84da6d1cfca0028077c9dbaf
+    digest: df1406a2c63ab2351a94a53191e0d47085c4a28dcec740e29b144d385ca7efc5
     icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
     keywords:
     - stonks
@@ -16,20 +16,4 @@ entries:
     urls:
     - app-0.1.0.tgz
     version: 0.1.0
-  demo:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-08-08T13:48:12.005604-03:00"
-    description: A Helm chart for Kubernetes
-    digest: 02813bdd977abffc81cbc76998caed9a8586168a5b8a84eedef8d16243bb4bd4
-    icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
-    keywords:
-    - stonks
-    name: demo
-    sources:
-    - https://github.com/doliveiraorg/helm_demo
-    type: application
-    urls:
-    - demo-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-08-08T13:48:12.005138-03:00"
+generated: "2025-08-08T13:50:12.967476-03:00"
