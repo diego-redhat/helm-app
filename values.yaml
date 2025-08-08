@@ -6,8 +6,8 @@ args:
 initContainers:
 containerPortName:
 containerPort:
-quayOrg: "devops"
-quayRepo: "golang-demo"
+quayOrg: "doliveira1277"
+quayRepo: ""
 tag:
 customImage:
 resources:
