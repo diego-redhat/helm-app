@@ -1,9 +1,25 @@
 apiVersion: v1
 entries:
+  app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-08T13:48:12.005427-03:00"
+    description: A Helm chart for Kubernetes
+    digest: efa96ca0882ee0988bf63691b1fae593beed183f84da6d1cfca0028077c9dbaf
+    icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
+    keywords:
+    - stonks
+    name: app
+    sources:
+    - https://github.com/diego-redhat/helm-app
+    type: application
+    urls:
+    - app-0.1.0.tgz
+    version: 0.1.0
   demo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-08-08T13:46:18.11243-03:00"
+    created: "2025-08-08T13:48:12.005604-03:00"
     description: A Helm chart for Kubernetes
     digest: 02813bdd977abffc81cbc76998caed9a8586168a5b8a84eedef8d16243bb4bd4
     icon: https://avatars.githubusercontent.com/u/61784505?s=60&v=4
@@ -16,4 +32,4 @@ entries:
     urls:
     - demo-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-08T13:46:18.112005-03:00"
+generated: "2025-08-08T13:48:12.005138-03:00"
