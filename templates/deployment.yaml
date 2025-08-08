@@ -30,7 +30,7 @@ spec:
         {{- if .Values.customImage }}
         image: {{ .Values.customImage }}
         {{- else if .Values.tag }}
-        image: quay.diolivei.vmware.tamlab.rdu2.redhat.com/{{ .Values.quayOrg }}/{{ .Values.quayRepo }}:{{ .Values.tag }}
+        image: quay.io/{{ .Values.quayOrg }}/{{ .Values.quayRepo }}:{{ .Values.tag }}
         {{- else }}
         image: quay.io/fedora/httpd-24-micro
         {{- end }}
