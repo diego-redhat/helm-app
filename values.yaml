@@ -22,3 +22,17 @@ ingressHost:
 ingressClassName:
 ingressAnnotations:
 ingressPaths:
+job:
+  create: false
+  customImage:
+  backoffLimit: 1
+  command:
+  volumeMounts:
+  volumes:
+  envFrom:
+secret:
+  create: false
+  data:
+configMap:
+  create: false
+  data:
