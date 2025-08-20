@@ -3,8 +3,10 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}
+  {{- if .Values.configMap.annotations }}
   annotations:
-    argocd.argoproj.io/sync-wave: "-2"
+  {{- toYaml .Values.configMap.annotations | nindent 4 }}
+  {{- else }}
 data:
 {{- toYaml .Values.configMap.data | nindent 2 }}
 {{- end }}

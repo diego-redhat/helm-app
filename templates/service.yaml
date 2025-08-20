@@ -7,6 +7,10 @@ metadata:
     {{- if .Values.extraLabels }}
     {{- toYaml .Values.extraLabels | nindent 4 }}
     {{- end }}
+  {{- if .Values.annotations }}
+  annotations:
+  {{- toYaml .Values.annotations | nindent 4 }}
+  {{- else }}
   namespace: {{ .Release.Namespace }}
   name: {{ .Release.Name  }}
 spec:

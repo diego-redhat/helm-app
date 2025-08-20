@@ -8,6 +8,10 @@ metadata:
   {{- toYaml .Values.extraLabels | nindent 4 }}
   {{- end }}
   namespace: {{ .Release.Namespace }}
+  {{- if .Values.annotations }}
+  annotations:
+  {{- toYaml .Values.annotations | nindent 4 }}
+  {{- else }}
   name: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replicas | default 1 }}

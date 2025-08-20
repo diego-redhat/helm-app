@@ -1,6 +1,7 @@
 createDeployment: true
 createRoute: true
 extraLabels:
+annotations:
 command:
 args:
 initContainers:
@@ -24,6 +25,7 @@ ingressAnnotations:
 ingressPaths:
 job:
   create: false
+  annotations:
   customImage:
   backoffLimit: 1
   command:
@@ -32,7 +34,9 @@ job:
   envFrom:
 secret:
   create: false
+  annotations:
   data:
 configMap:
   create: false
+  annotations:
   data:

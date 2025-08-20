@@ -3,10 +3,10 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: {{ .Release.Name }}-job
+  {{- if .Values.job.annotations }}
   annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
-    argocd.argoproj.io/sync-wave: '-1'  
+  {{- toYaml .Values.job.annotations | nindent 4 }}
+  {{- else }}
 spec:
   backoffLimit: {{ .Values.job.backoffLimit }}
   template:

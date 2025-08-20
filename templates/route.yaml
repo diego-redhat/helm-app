@@ -4,6 +4,10 @@ kind: Route
 metadata:
   name: {{ .Release.Name  }}
   namespace: {{ .Release.Namespace }}
+  {{- if .Values.annotations }}
+  annotations:
+  {{- toYaml .Values.annotations | nindent 4 }}
+  {{- else }}
 spec:
   port:
     targetPort: {{ .Values.containerPort | default 8080 }}
