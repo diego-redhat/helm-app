@@ -6,7 +6,7 @@ metadata:
   {{- if .Values.job.annotations }}
   annotations:
   {{- toYaml .Values.job.annotations | nindent 4 }}
-  {{- else }}
+  {{- end }}
 spec:
   backoffLimit: {{ .Values.job.backoffLimit }}
   template:

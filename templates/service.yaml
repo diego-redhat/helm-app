@@ -10,7 +10,7 @@ metadata:
   {{- if .Values.annotations }}
   annotations:
   {{- toYaml .Values.annotations | nindent 4 }}
-  {{- else }}
+  {{- end }}
   namespace: {{ .Release.Namespace }}
   name: {{ .Release.Name  }}
 spec:

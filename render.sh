@@ -1,3 +1,5 @@
+helm install dry-run --dry-run .
+
 mkdir -p temp/helm-demo/templates
 cp -pr *.yaml temp/helm-demo
 cp -pr templates/ temp/helm-demo/templates

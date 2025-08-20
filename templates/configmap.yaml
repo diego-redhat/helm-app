@@ -6,7 +6,7 @@ metadata:
   {{- if .Values.configMap.annotations }}
   annotations:
   {{- toYaml .Values.configMap.annotations | nindent 4 }}
-  {{- else }}
+  {{- end }}
 data:
 {{- toYaml .Values.configMap.data | nindent 2 }}
 {{- end }}
