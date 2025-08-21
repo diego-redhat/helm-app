@@ -28,6 +28,7 @@ job:
   annotations:
   customImage:
   backoffLimit: 1
+  startupProbe:
   command:
   volumeMounts:
   volumes:

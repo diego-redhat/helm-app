@@ -28,6 +28,10 @@ spec:
           envFrom:
           {{- toYaml .Values.job.envFrom | nindent 12 }}
           {{- end }}
+          {{- if .Values.job.startupProbe }}
+          startupProbe:
+          {{- toYaml .Values.job.startupProbe | nindent 12 }}
+          {{- end }}
       restartPolicy: Never
       {{- if .Values.job.volumeMounts }}
       volumes:
